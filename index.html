@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="shortcut icon" href="img/icon1.ico" type="image/x-icon">
+    <title>Angelo Nunes</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li data-scroll-nav="0" class="active"><a href="#">Sobre mim</a></li>
+            <li data-scroll-nav="1" class="active"><a href="#">Projetos</a></li>
+            <li data-scroll-nav="2" class="active"><a href="#">Formação</a></li>
+            <li data-scroll-nav="3" class="active"><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <header>
+            <div class="alinhamento">
+                <div class="imagem">
+                    <img src="./img/file1.svg">
+                </div>
+                <div class="texto">
+                    <h2>Olá, eu sou</h2>
+                    <h1>Angelo Nunes.</h1>
+                    <p>Estudante de Engenharia Civil</p>
+                    <div class="linkedin">
+                        <a href="https://www.linkedin.com/in/angelo-nunes-8759b6325/" target="_blank"
+                            rel="noopener noreferrer">
+                            <img src="./img/linkedin.svg"></img>
+                        </a>
+                        <a href="https://github.com/AngeloNunes01" target="_blank" rel="noopener noreferrer">
+                            <img src="./img/github.svg"></img>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section data-scroll-index="0">
+            <h2>Sobre mim</h2>
+            <p>
+                Sou estudante de Engenharia Civil na Faculdade de Ensino Superior de Feira de Santana (UNEF) 
+                e atuo no setor financeiro da CSO Engenharia. Ao longo da minha trajetória profissional,
+                desenvolvi experiência no setor administrativo, adquirindo habilidades em organização, 
+                análise e gestão de processos.
+                Além disso, possuo também conhecimentos na área de Tecnologia da Informação, que complementam minha
+                atuação profissional e contribuem para soluções mais eficientes e inovadoras. Busco
+                constantemente evoluir, unindo conhecimento técnico, visão administrativa e tecnologia,
+                para construir uma carreira sólida na engenharia.
+            </p>
+        </section>
+        <section data-scroll-index="1">
+            <h2>Projetos</h2>
+            <p>
+                Ainda em construção, visite meu GitHub ou Linkedln, e fique por dentro
+                do que estou produzindo.
+            </p>
+        </section>
+        <section data-scroll-index="2">
+            <h2>Formação e cursos</h2>
+            <p>
+                Atualmente cursando 
+                Engenharia Civil na Faculdade de Ensino Superior da Cidade de Feira de Santana - UNEF
+                Realizei alguns cursos como: Aprendizagem e qualificação Profissional em Serviços
+                Administrativos, realizado no SENAC, na mesma unidade também fiz cursos de Excel,
+                PowerPoint e Word. Curso de Aprendizagem Industrial Administrativo - SENAI. Cursei 4 
+                semestres de Sistemas de Informação pelo IFBA. Presenciei a palestras voltadas para o desenvolvimento
+                pessoal e social, além de eventos voltados para a Inovação em empresas e escolas.
+                "O aprendizado é um legado que nunca morre" - Eliabe Serafim. Portanto tiro desta
+                frase toda minha movimentação em torno do conhecimento.
+            </p>
+        </section>
+        <section data-scroll-index="3">
+            <h2>Contato</h2>
+            <p>
+                Se você quiser realizar um trabalho, tirar uma dúvida ou entrar
+                em contato direto comigo, estou a disposição.
+            </p>
+            <div class="container">
+                <div class="content">
+                    <div class="left-side">
+                        <div class="address details">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="topic">Residência</div>
+                            <div class="text-one">Feira de Santana - BA</div>
+                            <div class="text-two">Muchila</div>
+                        </div>
+                        <div class="phone details">
+                            <i class="fas fa-phone-alt"></i>
+                            <div class="topic">Telefone</div>
+                            <div class="text-one">+55 75 98357 1515</div>
+                        </div>
+                        <div class="email details">
+                            <i class="fas fa-envelope"></i>
+                            <div class="topic">Email</div>
+                            <div class="text-one">angelonunes211@hotmail.com</div>
+                        </div>
+                    </div>
+
+                        <div class="right-side">
+                            <div class="topic-text">Envie sua mensagem</div>
+                            <form action="https://formsubmit.co/angelonunes211@hotmail.com" method="post">
+                                <div class="input-box">
+                                    <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off"
+                                        required />
+                                </div>
+                                <div class="input-box">
+                                    <input type="email" name="email" placeholder="Digite seu email" autocomplete="off"
+                                        required />
+                                </div>
+                                <div class="input-box message-box">
+                                    <textarea name="message" cols="30" raws="10" placeholder="Digite sua mensagem"
+                                        required></textarea>
+                                </div>
+                                <div class="button">
+                                    <button type="submit">Enviar</button>
+                                    <input type="hidden" name="_next" value="https://angelonunes01.github.io/portfolio/thanks.html">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <a href="#" data-scroll-goto="0" class="top">Top</a>
+
+    <script src="./protocolo.jquery.js"></script>
+    <script src="./interação.scrollit.js"></script>
+
+    <script>
+        $(function () {
+            $.scrollIt({
+                topOffset: -350,
+            });
+        });
+    </script>
+
+    <footer class="footer">
+        <h4 class="title-footer">
+            < Desenvolvido por <span>Angelo Nunes</span> >
+        </h4>
+            <a class="git" href="https://github.com/AngeloNunes01" target="_blank"><i class="fab fa-github"></i>
+                Github</a>
+            <a class="lin" href="https://www.linkedin.com/in/angelo-nunes-8759b6325/" target="_blank"><i
+                    class="fab fa-linkedin"></i> LinkedIn</a>
+        <p class="Copyright">Website produzido em 2026, repositório anexado no GitHub</p>
+    </footer>
+
+</body>
+
+</html>
